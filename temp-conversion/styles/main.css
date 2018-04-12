@@ -32,10 +32,21 @@ body {
     /* color: #fff; */
     letter-spacing: .3em;
     /* background: #666; */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 6.5em;
+    /* Height of the footer */
+    background: #666;
+    color: #fff;
 }
 
 .body-title img {
-    margin-bottom: .5em;
+    margin-bottom: 4em;
+}
+
+.form {
+    margin-top: 14em;
 }
 
 .btn {
