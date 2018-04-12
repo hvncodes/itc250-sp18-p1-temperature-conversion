@@ -12,7 +12,7 @@ if(isset($_POST['convert'])) {
         $celsius = convertCelsius ($tempValue, $tempType);
         $fahrenheit = convertFahrenheit ($tempValue, $tempType);
         $kelvin = convertKelvin ($tempValue, $tempType);
-        echo "You entered $convert <br><br>";
+        echo "You entered $convert $tempType<br><br>";
         echo "$celsius ˚C <br>";
         echo "$fahrenheit ˚F <br>";
         echo "$kelvin K ";
@@ -31,9 +31,9 @@ if(isset($_POST['convert'])) {
     <p>Temperature Unit</p>
     <select name="temptype">
         <option value="">Please select a temperature unit </option>
-        <option value="celsius">Celsius</option>
-        <option value="fahrenheit">Fahrenheit </option>
-        <option value="kelvin">Kelvin</option>
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">Fahrenheit </option>
+        <option value="Kelvin">Kelvin</option>
     </select>
     <br>
     <br>
@@ -44,9 +44,9 @@ if(isset($_POST['convert'])) {
 
 function convertCelsius ($tempValue, $tempType) //converts Fahren or Kelvin to Celsius
 {
-    if ($tempType == 'fahrenheit') { //convert from fahrenheit to celsius
+    if ($tempType == 'Fahrenheit') { //convert from fahrenheit to celsius
         $celsConver = ($tempValue -32) / 1.8;
-    } else if ($tempType == 'kelvin') { //convert from Kelvin to celsius
+    } else if ($tempType == 'Kelvin') { //convert from Kelvin to celsius
         $celsConver = $tempValue - 273.15;
     } else { //it's already celsius, do nothing
         $celsConver = $tempValue;
@@ -56,9 +56,9 @@ function convertCelsius ($tempValue, $tempType) //converts Fahren or Kelvin to C
 
 function convertFahrenheit ($tempValue, $tempType) //converts celsius or Kelvin to fahren
 {
-    if ($tempType == 'kelvin') { // convert from kelvin to fahren
+    if ($tempType == 'Kelvin') { // convert from kelvin to fahren
         $farConver = $tempValue * 1.8 - 459.67;
-    } else if ($tempType == 'celsius') { //convert from celsius to fahren
+    } else if ($tempType == 'Celsius') { //convert from celsius to fahren
         $farConver = $tempValue * 1.8 + 32;
     } else {// already fahren, do nothing
         $farConver = $tempValue;
@@ -68,9 +68,9 @@ function convertFahrenheit ($tempValue, $tempType) //converts celsius or Kelvin 
 
 function convertKelvin ($tempValue, $tempType) //converts celsius or fahren to Kelvin
 {
-    if ($tempType == 'fahrenheit') { // convert from fahren to kelvin
+    if ($tempType == 'Fahrenheit') { // convert from fahren to kelvin
         $kelConver = ($tempValue + 459.67) * 5/9;
-    } else if ($tempType == 'celsius') { //convert from celsius to kelvin
+    } else if ($tempType == 'Celsius') { //convert from celsius to kelvin
         $kelConver = $tempValue + 273.15;
     } else { //already kelvin, do nothing.
         $kelConver = $tempValue;
