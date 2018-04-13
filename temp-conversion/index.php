@@ -18,14 +18,13 @@
             <img src="img/thermometer-tool.svg" alt="thermometer" width="42">  
         </div>  
         <div class="form">    
-            <?php include 'includes/conversions.php';?>
+            <?php include 'includes/form.php';?>
         </div>
 
         <footer>
             &copy; 2018 - Group One
         </footer>
     </div>
-
     
 </body>
 
