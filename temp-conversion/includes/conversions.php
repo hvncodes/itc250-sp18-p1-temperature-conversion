@@ -48,7 +48,7 @@ if(isset($_POST['convert'])) {
     <br>
     <br>
     <br>
-    <input type="submit" name="convert" class="btn"/> 
+    <input type="submit" name="convert" class="btn" value="CONVERT"/> 
     </form>';
 }
 
