@@ -21,7 +21,9 @@
             <?php include 'includes/conversions.php'?>
         </div>
 
-        <footer>&copy; 2018 - Group One</footer>
+        <footer>
+            &copy; 2018 - Group One
+        </footer>
     </div>
 
     
