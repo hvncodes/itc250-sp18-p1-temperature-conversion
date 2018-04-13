@@ -36,10 +36,10 @@ if(isset($_POST['convert'])) {
 } else {
     echo '<form action="" method="post">
     <p>Temperature to Convert</p>
-    <input type="text" name="tempvalue" placeholder="Enter the Temperature" /> <br><br>
+    <input type="text" name="tempvalue" placeholder="Enter the Temperature" required/> <br><br>
 
     <p>Temperature Unit</p>
-    <select name="temptype">
+    <select name="temptype" required>
         <option value="">Please select a temperature unit </option>
         <option value="Celsius">Celsius</option>
         <option value="Fahrenheit">Fahrenheit </option>
@@ -48,7 +48,7 @@ if(isset($_POST['convert'])) {
     <br>
     <br>
     <br>
-    <input type="submit" name="convert" class="btn"/> 
+    <input type="submit" name="convert" class="btn" value="CONVERT"/> 
     </form>';
 }
 
