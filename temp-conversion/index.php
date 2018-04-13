@@ -22,7 +22,7 @@
         </div>
 
         <footer>
-            <p>&copy; 2018 - Group One</p>
+            &copy; 2018 - Group One
         </footer>
     </div>
 
