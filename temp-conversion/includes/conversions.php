@@ -12,16 +12,26 @@ if(isset($_POST['convert'])) {
         $celsius = convertCelsius ($tempValue, $tempType);
         $fahrenheit = convertFahrenheit ($tempValue, $tempType);
         $kelvin = convertKelvin ($tempValue, $tempType);
-        echo "You entered $convert $tempType<br><br>";
-        echo "$celsius ˚C <br>";
-        echo "$fahrenheit ˚F <br>";
+        echo "You entered $convert degrees $tempType<br><br><br>";
+        echo "$celsius ˚C <br><br>";
+        echo "$fahrenheit ˚F <br><br>";
         echo "$kelvin K ";
         echo '
         <br>
-        <p><a href="">BACK</a></p>
+        <br>
+        <form action="">
+            <input type="submit" value="BACK" class="btn"/>
+        </form>
         ';
     }else { //it's not a number
        echo 'Your input is invalid';
+       echo '
+        <br>
+        <br>
+        <form action="">
+            <input type="submit" value="BACK" class="btn"/>
+        </form>
+        ';
     }
 } else {
     echo '<form action="" method="post">
