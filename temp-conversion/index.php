@@ -18,7 +18,7 @@
             <img src="img/thermometer-tool.svg" alt="thermometer" width="42">  
         </div>  
         <div class="form">    
-            <?php include 'includes/conversions.php'?>
+            <?php include 'includes/conversions.php';?>
         </div>
 
         <footer>
