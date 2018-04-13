@@ -7,7 +7,7 @@ if(isset($_POST['convert'])) {
     $tempValue = (float)$_POST['tempvalue'];
     $tempType = $_POST['temptype'];
     
-    if (is_numeric($_POST['tempvalue'])){ //is tempvalue a number?
+    if ((is_numeric($_POST['tempvalue'])) && ($tempType != "")){ //is tempvalue a number?
         $convert = $tempValue;
         $celsius = convertCelsius ($tempValue, $tempType);
         $fahrenheit = convertFahrenheit ($tempValue, $tempType);
