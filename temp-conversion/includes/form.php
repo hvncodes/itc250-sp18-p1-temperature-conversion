@@ -2,7 +2,7 @@
 //form.php
 
 //includes conversion functions
-include 'includes/conversions.php';
+include 'conversions.php';
 
 //form handler to convert temperature 
 if (isset($_POST['convert'])) {
