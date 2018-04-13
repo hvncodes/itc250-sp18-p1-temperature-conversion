@@ -1,6 +1,9 @@
 <?php 
 //form.php
 
+//includes conversion functions
+include 'includes/conversions.php';
+
 //form handler to convert temperature 
 if (isset($_POST['convert'])) {
     $tempValue = (float)$_POST['tempvalue'];
@@ -54,6 +57,3 @@ if (isset($_POST['convert'])) {
     </form>
     ';
 }
-
-//includes conversion functions
-include 'includes/conversions.php';
